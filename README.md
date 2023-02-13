@@ -78,6 +78,6 @@ While resampling can attempt to address imbalance, it does not guarantee better 
 
 If we were to combine the techniques of resampling the dataset as well as use an ensemble classifier, the following results would occur:
 
-![Suggestion]()
+![Suggestion](https://github.com/doliver231/Credit_Risk_Analysis/blob/main/Images/Suggestion.png)
 
 Out of all the resampling models, the Naive Random Oversampling model had the highest balanced accuracy score (and not by much). If we resampled our training data using this model, and then fit the resampled data into the Easy Ensemble Adaboost Classifier to then make our predictions, we would achieve improvements on our evaluations. Our balanced accuracy score would rise to 92.85%. Our precision rate for the predicted high risk applicants that are actually high risk rose to 14%. As far as sensitivity (true positive rate), 89% of the high risk and 97% of the low risk applicants would be predicted correctly. This shows that if we balance our training sets before using our best ensemble classifier (Easy Ensemble Adaboost), we can achieve better predictions.
