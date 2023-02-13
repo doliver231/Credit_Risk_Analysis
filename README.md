@@ -20,26 +20,60 @@ The goal of this project is to build a classification model that can predict if 
 
 ### Naive Random Oversampling
 
-![Naive Random Oversampling]()
+![Naive Random Oversampling](https://github.com/doliver231/Credit_Risk_Analysis/blob/main/Images/NaiveRandomOverSampling.png)
+
+* Balanced Accuracy Score:
+* Precision:
+* Recall:
+-----------------------------------------------------------------
 
 ### SMOTE Oversampling
 
-![SMOTE]()
+![SMOTE](https://github.com/doliver231/Credit_Risk_Analysis/blob/main/Images/SMOTEOverSampling.png)
+
+* Balanced Accuracy Score:
+* Precision:
+* Recall:
+-----------------------------------------------------------------
 
 ### Cluster Centroid Undersampling
 
-![Cluster Centroid]()
+![Cluster Centroid](https://github.com/doliver231/Credit_Risk_Analysis/blob/main/Images/ClusterCentroidUnderSampling.png)
+
+* Balanced Accuracy Score:
+* Precision:
+* Recall:
+-----------------------------------------------------------------
 
 ### SMOTEENN Combination Resampling
 
-![SMOTEENN]()
+![SMOTEENN](https://github.com/doliver231/Credit_Risk_Analysis/blob/main/Images/SMOTEENNCombination.png)
+
+* Balanced Accuracy Score:
+* Precision:
+* Recall:
+-----------------------------------------------------------------
 
 ### Balanced Random Forest Classification
 
-![Balanced Random Forest]()
+![Balanced Random Forest](https://github.com/doliver231/Credit_Risk_Analysis/blob/main/Images/BalancedRandomForest.png)
+
+* Balanced Accuracy Score:
+* Precision:
+* Recall:
+-----------------------------------------------------------------
 
 ### Easy Ensemble AdaBoost Classification
 
-![Easy Ensemble AdaBoost]()
+![Easy Ensemble AdaBoost](https://github.com/doliver231/Credit_Risk_Analysis/blob/main/Images/EasyEnsembleAdaBoost.png)
+
+* Balanced Accuracy Score:
+* Precision:
+* Recall:
+-----------------------------------------------------------------
 
 ## Conclusion
+
+While resampling can attempt to address imbalance, it does not guarantee better results. In terms of this dataset, we find that the best overall model to use is the "Easy Ensemble AdaBoost Classifier" because not only does it have a high accuracy score, but it also has the best precision and sensitivity (recall) especially in terms of correctly identifying high-risk applicants. Therefore, we would reccomend using this model to predict credit risk.
+
+The one downside to this model is a high false positive rate meaning that of the applicants that are predicted to be high risk, only a small amount of them will actually be high risk. In this scenario though, it is better for the model to have greater senstivity than precision because the credit card company would rather wrongly classify low risk applicants as high risk, than have high risk applicants classified as low risk thus approving them for a credit card or loan they are unable to repay. Also, the credit card company can further narrow down and examine these potential high risk individuals later on outside of the machine learning scope.
